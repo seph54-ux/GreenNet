@@ -33,9 +33,9 @@ export const ActuatorCard: React.FC<ActuatorCardProps> = ({
 }) => {
   return (
     <div
-      className={`border rounded-xl p-4 sm:p-5 transition-all duration-200 ${
+      className={`border rounded-xl p-4 sm:p-5 transition-all duration-300 glass-shimmer ${
         isOn
-          ? 'border-[var(--accent-color)] bg-[var(--accent-bg)] shadow-sm'
+          ? 'border-[var(--accent-color)] bg-[var(--accent-bg)] shadow-md ring-1 ring-[var(--accent-color)]/30'
           : 'border-[var(--border-theme)] bg-[var(--bg-surface)]'
       }`}
     >

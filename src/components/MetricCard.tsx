@@ -52,13 +52,13 @@ export const MetricCard: React.FC<MetricCardProps> = ({
   return (
     <div
       onClick={onClick}
-      className={`group relative bg-[var(--bg-surface)] border rounded-xl p-4 transition-all duration-200 ${
+      className={`group relative bg-[var(--bg-surface)] border rounded-xl p-4 transition-all duration-300 glass-shimmer ${
         isCritical
           ? 'border-red-600/70 bg-red-950/20 shadow-sm shadow-red-950/30 ring-1 ring-red-500/30'
           : isWarning
           ? 'border-amber-600/60 bg-amber-950/15'
           : 'border-[var(--border-theme)] hover:border-[var(--border-theme-strong)]'
-      } ${onClick ? 'cursor-pointer hover:-translate-y-0.5' : ''}`}
+      } ${onClick ? 'cursor-pointer hover:-translate-y-1' : ''}`}
     >
       {/* Top row: Kicker / Title + Icon */}
       <div className="flex items-start justify-between gap-2 mb-2">
@@ -73,15 +73,15 @@ export const MetricCard: React.FC<MetricCardProps> = ({
           </h4>
         </div>
         <div
-          className={`w-7 h-7 rounded-lg flex items-center justify-center transition-colors shrink-0 ${
+          className={`w-7 h-7 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 shrink-0 ${
             isCritical
               ? 'bg-red-500/20 text-red-400'
               : isWarning
               ? 'bg-amber-500/20 text-amber-400'
-              : 'bg-[var(--accent-bg)] text-[var(--accent-color)]'
+              : 'bg-[var(--accent-bg)] text-[var(--accent-color)] shadow-sm'
           }`}
         >
-          <Icon className="w-4 h-4" />
+          <Icon className="w-4 h-4 transition-transform" />
         </div>
       </div>
 

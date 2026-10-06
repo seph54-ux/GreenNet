@@ -11,6 +11,7 @@ import {
   Menu,
   X,
   Palette,
+  Crown,
   LayoutDashboard,
   Activity,
   Sliders,
@@ -134,7 +135,11 @@ export const Header: React.FC<HeaderProps> = ({ currentTab, setCurrentTab }) => 
               title={`Active Theme: ${themeConfig.name} (Click to customize)`}
               className="h-8 px-2 sm:px-2.5 rounded-lg bg-[var(--bg-surface-subtle)] hover:bg-[var(--accent-bg)] border border-[var(--border-theme)] text-xs text-[var(--text-primary)] transition-colors flex items-center gap-1.5 min-h-[36px]"
             >
-              <Palette className="w-3.5 h-3.5 text-[var(--accent-color)]" />
+              {themeConfig.id === 'opulent-glass' ? (
+                <Crown className="w-3.5 h-3.5 text-amber-400 animate-float" />
+              ) : (
+                <Palette className="w-3.5 h-3.5 text-[var(--accent-color)]" />
+              )}
               <span className="hidden xl:inline text-[11px] font-medium">{themeConfig.name}</span>
             </button>
 

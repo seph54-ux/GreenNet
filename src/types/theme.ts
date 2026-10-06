@@ -4,7 +4,8 @@ export type ThemeId =
   | 'sunlight-contrast'
   | 'muted-sage'
   | 'hydro-biolab'
-  | 'harvest-amber';
+  | 'harvest-amber'
+  | 'opulent-glass';
 
 export interface ThemeOption {
   id: ThemeId;
@@ -97,6 +98,19 @@ export const THEME_OPTIONS: ThemeOption[] = [
       card: '#1c1712',
       accent: '#f59e0b',
       text: '#fef3c7',
+    },
+  },
+  {
+    id: 'opulent-glass',
+    name: 'Imperial Glass & Flora',
+    category: 'Specialized',
+    description: 'Ultra-luxurious frosted glassmorphism featuring twilight architectural greenhouse photography, champagne gold accents, and fluid kinetic micro-animations.',
+    utility: 'Executive VIP showcase console with refractive frosted blur, gilded champagne highlights, and living motion choreography.',
+    swatches: {
+      bg: '#040d08',
+      card: 'rgba(10, 24, 16, 0.65)',
+      accent: '#d4af37',
+      text: '#ffffff',
     },
   },
 ];

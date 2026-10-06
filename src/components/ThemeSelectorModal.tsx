@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
-import { Palette, Check, X, Sun, Moon, Eye, Contrast, Waves, Sparkles } from 'lucide-react';
+import { Palette, Check, X, Sun, Moon, Eye, Contrast, Waves, Sparkles, Crown } from 'lucide-react';
 import { ThemeId } from '../types/theme';
 
 export const ThemeSelectorModal: React.FC = () => {
@@ -22,6 +22,8 @@ export const ThemeSelectorModal: React.FC = () => {
         return Waves;
       case 'harvest-amber':
         return Sparkles;
+      case 'opulent-glass':
+        return Crown;
       default:
         return Palette;
     }

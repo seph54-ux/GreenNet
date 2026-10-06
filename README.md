@@ -92,12 +92,13 @@ GreenNet supports both **Autonomous Sensor-Threshold Operation** and **Manual Op
 
 ---
 
-## 5. 6-Theme Adaptive Display Engine
+## 5. 7-Theme Adaptive Display Engine
 
-Operators can switch between 6 purpose-built functional and aesthetic visual profiles:
+Operators can switch between 7 purpose-built functional, aesthetic, and luxury visual profiles:
 
-| Theme | Category | Operational Utility |
+| Theme | Category | Operational Utility & Visual Character |
 | :--- | :--- | :--- |
+| **Imperial Glass & Flora** | Luxury Glassmorphism | **Executive VIP console**: Frosted glassmorphic blur (`backdrop-blur-2xl`), high-resolution twilight architectural greenhouse atrium backdrop, royal champagne gold reflections (`#d4af37`), and kinetic micro-animations (specular sweeps, floating icons, gilded edge illumination). |
 | **Botanical Dark** | Dark (Default) | Deep forest canvas (`#0b130e`) with emerald accents. Standard balanced mode for 24/7 monitoring. |
 | **Daylight Clean** | Light Mode | High-contrast white canvas (`#ffffff`) and slate text. Built for bright sunlight inside glasshouses. |
 | **Sunlight High-Contrast** | High Contrast | Pitch OLED black (`#000000`) with luminous lime borders (`#00ff88`). Anti-glare for direct outdoor sun. |
@@ -157,31 +158,6 @@ Operators can switch between 6 purpose-built functional and aesthetic visual pro
             ├── ControlsView.tsx       # Full actuator command center & rule matrix
             ├── IrrigationView.tsx     # Tower recirculation scheduler & hydraulic gauge
             └── AlertsView.tsx         # Push notification settings, threshold sliders & logs
-```
-
----
-
-## 8. Getting Started & Development
-
-### Installation
-```bash
-npm install
-```
-
-### Run Development Server
-```bash
-npm run dev
-```
-The application will launch on `http://localhost:3000`.
-
-### Type-Check & Lint
-```bash
-npm run lint
-```
-
-### Production Build
-```bash
-npm run build
 ```
 
 ---
