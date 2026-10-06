@@ -1,0 +1,6 @@
+{
+  "name": "GreenNet - Greenhouse Monitoring & Automation",
+  "description": "Mobile-first smart greenhouse monitoring and automated climate control dashboard featuring real-time heat, humidity, air quality, soil metrics, scheduled irrigation, and instant push notifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
